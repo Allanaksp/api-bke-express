@@ -2,9 +2,11 @@
   "name": "server.js",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Allanaksp/api-bke-express/issues"
   },
-  "homepage": "https://github.com/Allanaksp/api-bke-express#readme"
+  "homepage": "https://github.com/Allanaksp/api-bke-express#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
