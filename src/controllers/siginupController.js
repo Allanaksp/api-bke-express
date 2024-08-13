@@ -1,0 +1,3 @@
+const siginup = (req, res) => {
+    
+}
