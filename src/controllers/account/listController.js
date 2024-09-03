@@ -1,4 +1,4 @@
-import { listAccounts } from "../../models/accountmodel.js"
+import { listAccounts } from "../../models/accountModel.js"
 
 const list = async (req, res) => {
 

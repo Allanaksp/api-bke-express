@@ -1,5 +1,4 @@
 import {PrismaClient} from '@prisma/client'
-
 const prisma = new PrismaClient()
 
 export const listAccounts = async () => {
@@ -7,7 +6,7 @@ export const listAccounts = async () => {
     return accounts
 }
 
-export const getByIdAccounts = async (id) => {
+export const getByIdAccount = async (id) => {
     const account = await prisma.account.findUnique({
         where: {
             id
@@ -16,4 +15,9 @@ export const getByIdAccounts = async (id) => {
     return account
 }
 
-
+export const create = async (account) => {
+    const result = await prisma.account.create({
+        data: account
+    })
+    return result
+}
