@@ -1,10 +1,7 @@
 import express from 'express'
 import createController from '../controllers/account/createController.js'
-import getByIdController from '../controllers/getByIdController.js'
-import listController from '../controllers/listController.js'
-import upDateController from '../controllers/upDateController.js'
-import getByIdController from '../controllers/account/getByIdController.js'
 import listController from '../controllers/account/listController.js'
+import getByIdController from '../controllers/account/getByIdController.js'
 import updateController from '../controllers/account/updateController.js'
 import removeController from '../controllers/account/removeController.js'
 

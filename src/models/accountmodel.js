@@ -4,6 +4,16 @@ const prisma = new PrismaClient()
 
 export const listAccounts = async () => {
     const accounts = await prisma.account.findMany()
-    return accounts 
+    return accounts
 }
+
+export const getByIdAccounts = async (id) => {
+    const account = await prisma.account.findUnique({
+        where: {
+            id
+        }
+    })
+    return account
+}
+
 
